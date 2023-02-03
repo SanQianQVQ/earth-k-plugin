@@ -50,7 +50,7 @@ let user_id2 = ""
         let img = await puppeteer.screenshot("123", {
             ...data1,
         });
-        e.reply(img)
+        e.reply(img, false, { recallMsg: 30 })
 
 
     }
